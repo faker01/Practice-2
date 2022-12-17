@@ -67,11 +67,12 @@ int main()
 
     std::cout << "сумма:" << sum(A, B) << std::endl;
     answer_mult = A;
-    while (c != B)
+    do
     {
         answer_mult = sum(answer_mult, A);
         c = sum(c, "1");
     }
+    while (c != B);
     std::cout << "Произведение:" << answer_mult;
     return 0;
 }
